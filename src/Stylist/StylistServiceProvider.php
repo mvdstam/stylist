@@ -102,6 +102,7 @@ class StylistServiceProvider extends AggregateServiceProvider
     private function registerCommands()
     {
         $this->commands(
+            'FloatingPoint\Stylist\Console\BowerInstallCommand',
             'FloatingPoint\Stylist\Console\PublishAssetsCommand'
         );
     }
