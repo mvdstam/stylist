@@ -14,7 +14,7 @@ class BowerInstallCommand extends Command
     /**
      * @var string
      */
-    protected $signature = 'module:bower-install {--production}';
+    protected $signature = 'stylist:bower-install {--production}';
 
     /**
      * @var string
@@ -89,6 +89,6 @@ class BowerInstallCommand extends Command
      */
     protected function bowerFileExists($path)
     {
-        return file_exists($path . 'bower.json');
+        return file_exists($path . '/bower.json');
     }
 }
